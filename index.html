@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mulla Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .gate-text {
+            font-size: 48px;
+            font-weight: bold;
+            color: #FF6347; /* Tomato color */
+            margin-top: 100px;
+        }
+        .buy-button {
+            margin-top: 50px;
+            padding: 20px 40px;
+            font-size: 24px;
+            background-color: #008CBA; /* Blue color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buy-button:hover {
+            background-color: #005f73;
+        }
+    </style>
+</head>
+<body>
+    <div class="gate-text">
+        Mulla ke lulli katate hain
+    </div>
+    <button class="buy-button" onclick="playMusic()">Buy</button>
+
+    <!-- Audio player (hidden) -->
+    <audio id="music" src="https://raw.githubusercontent.com/Abhisheknayak16/Mulla/main/pakad-mc.mp3"></audio>
+
+    <script>
+        function playMusic() {
+            var audio = document.getElementById('music');
+            audio.play();
+        }
+    </script>
+</body>
+</html>
